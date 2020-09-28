@@ -1,0 +1,62 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* Generiche, body e wrapper */
+i {
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+i:hover {
+  color: grey;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/block-notes.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+  width: 80%;
+  padding-top: 80px;
+  margin: auto;
+  text-align: center;
+}
+/* fine generiche, body e wrapper */
+
+/* Header */
+h1 {
+  display: inline-block;
+  margin: 30px;
+  vertical-align: middle;
+}
+
+header i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+/* fine header */
+
+/* Main */
+#todo-list {
+  margin: 30px auto;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+}
+
+.task {
+  margin-bottom: 20px;
+}
+
+.task i:first-child {
+  margin-left: 20px;
+}
+/* fine main */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todoolean CRUD life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header con titolo e icona di aggiunta elemento -->
+      <header>
+        <h1>Todoolean CRUD</h1>
+        <i class="fas fa-plus-circle add"></i>
+        <div>
+          <input type="text" placeholder="Inserisci una nuova task">
+          <button id="send">Invia</button>
+        </div>
+      </header>
+      <!-- / header -->
+      <!-- Main -->
+      <main>
+        <ul id="todo-list"></ul>
+      </main>
+      <!-- / main -->
+    </div>
+    <!-- Wrapper -->
+    <!-- Handlebars template -->
+    <script id="insert-templ" type="text/x-handlebars-template">
+      <li class="task">
+        {{text}}
+        <i class="fas fa-edit"></i>
+        <i class="fas fa-trash-alt delete"></i>
+      </li>
+    </script>
+    <!-- / handlebars template -->
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

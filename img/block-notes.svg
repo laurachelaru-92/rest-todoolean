@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="142.01213mm"
+   height="144.09464mm"
+   viewBox="0 0 142.01213 144.09464"
+   version="1.1"
+   id="svg426"
+   inkscape:version="0.92.1 15371"
+   sodipodi:docname="Foglio blocco note.svg">
+  <defs
+     id="defs420">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter984"
+       x="-0.010118235"
+       width="1.0202365"
+       y="-0.0071806181"
+       height="1.0143611">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.89060503"
+         id="feGaussianBlur986" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0502936"
+     inkscape:cx="436.41764"
+     inkscape:cy="272.30482"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata423">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.2080436,-0.12526826)">
+    <g
+       id="g206"
+       transform="matrix(0.66644431,0,0,0.66644431,30.450846,-269.24441)">
+      <g
+         id="g230"
+         style="filter:url(#filter984)"
+         transform="matrix(0,1.0032091,0.70572328,0,-45.995729,406.33364)">
+        <path
+           inkscape:connector-curvature="0"
+           id="path226"
+           d="m 210,0 h 1.24752 V 297 H 210 Z"
+           style="opacity:1;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.15109524;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           style="opacity:1;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.09336096;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 211.24752,297 v 0.66964 H 0 V 297 Z"
+           id="path228"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         id="path232"
+         transform="scale(0.26458333)"
+         d="m -172.56055,1537.0312 v 793.6993 h 788.88086 v -793.6993 z m 30.89453,34.4942 h 38.27344 v 24.5644 h -38.27344 z m 79.208989,0 h 38.273437 v 24.5644 h -38.273437 z m 84.009765,0 h 38.273438 v 24.5644 H 21.552734 Z m 93.611326,0 h 38.27344 v 24.5644 h -38.27344 z m 84.00782,0 h 38.27343 v 24.5644 h -38.27343 z m 103.21289,0 h 38.27343 v 24.5644 h -38.27343 z m 84.00976,0 h 38.27344 v 24.5644 h -38.27344 z m 98.41211,0 h 38.27148 v 24.5644 h -38.27148 z m 88.80859,0 h 38.27344 v 24.5644 h -38.27344 z"
+         style="opacity:1;fill:#fdfafc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.58422315;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path156"
+         d="M 163.60409,428.00755 H -45.755835"
+         style="fill:#fcd4eb;fill-opacity:1;stroke:#fcd4eb;stroke-width:0.26417977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         d="M 163.3642,437.00755 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729 m 209.359929,10 H -45.995729"
+         style="fill:#d3eafa;fill-opacity:1;stroke:#d3eafa;stroke-width:0.26417977px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path197"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
