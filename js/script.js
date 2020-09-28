@@ -77,7 +77,8 @@ $("#todo-list").on("keyup", "input.edit", function(e){
   if(e.which == 13) {
     var value = $(this).val();
     if(value != "") {
-      console.log(value);
+      var idListItem = $(this).parent().attr("id");
+      updateEl(idListItem, value);
       $(this).val("");
     }
   }
@@ -85,11 +86,32 @@ $("#todo-list").on("keyup", "input.edit", function(e){
 
 // Evento al click su "Ok"
 $("#todo-list").on("click", ".ok", function(){
-  var val = $(this).siblings("input.edit").val();
-  console.log(val);
-  $(this).siblings("input.edit").val("");
+  var value = $(this).siblings("input.edit").val();
+  if(value != "") {
+    var idListItem = $(this).parent().attr("id");
+    updateEl(idListItem, value);
+    $(this).siblings("input.edit").val("");
+  }
 });
 
+
+// Funzione che esegue chiamata ajax PUT prendendo un id e modificando il "text"
+function updateEl(idEl, input) {
+  $.ajax({
+    "url": "http://157.230.17.132:3010/todos/"+idEl,
+    "method": "PUT",
+    "data": {
+      "text": input
+    },
+    "success": function(data){
+      $("#"+idEl+" p").text(input);
+    },
+    "error": function(error){
+      alert("Put error");
+    },
+
+  });
+}
 
 
 // ******DELETE******
