@@ -31,10 +31,12 @@
     <!-- Wrapper -->
     <!-- Handlebars template -->
     <script id="insert-templ" type="text/x-handlebars-template">
-      <li class="task">
-        {{text}}
+      <li class="task" id="{{arrayId}}">
+        <p>{{text}}</p>
         <i class="fas fa-edit"></i>
         <i class="fas fa-trash-alt delete"></i>
+        <input type="text" class="edit" placeholder="Scrivi qui...">
+        <button class="ok">Ok</button>
       </li>
     </script>
     <!-- / handlebars template -->

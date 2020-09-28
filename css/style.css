@@ -5,6 +5,10 @@ padding: 0;
 }
 
 /* Generiche, body e wrapper */
+.d-none {
+  display: none;
+}
+
 i {
   cursor: pointer;
   transition: color 0.4s ease;
@@ -56,7 +60,11 @@ header i {
   margin-bottom: 20px;
 }
 
-.task i:first-child {
+.task p {
+  display: inline-block;
+}
+
+.task i.fa-edit {
   margin-left: 20px;
 }
 /* fine main */
