@@ -9,7 +9,12 @@ padding: 0;
   display: none;
 }
 
-i {
+.invisible {
+  visibility: hidden;
+}
+
+i,
+.task button.ok {
   cursor: pointer;
   transition: color 0.4s ease;
 }
@@ -21,15 +26,20 @@ i:hover {
 body {
   width: 100%;
   height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#wrapper {
+  width: 70%;
+  height: 100%;
   background-image: url(../img/block-notes.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
-}
-
-#wrapper {
-  width: 80%;
-  padding-top: 80px;
+  padding: 80px 20px 0 20px;
   margin: auto;
   text-align: center;
 }
@@ -46,25 +56,85 @@ header i {
   font-size: 20px;
   vertical-align: middle;
 }
+
+#plus {
+  position: relative;
+}
+
+header .balloon-add {
+  opacity: 0;
+  background-color: #ebebe0;
+  width: 80px;
+  padding: 6px;
+  border-radius: 7px;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  top: -10px;
+  left: 100%;
+  font-size: 12px;
+}
+
+.add:hover + .balloon-add {
+  opacity: 1;
+}
+
+.input-container {
+  background-color: #d8ecf3;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.input-container input,
+.input-container button {
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.input-container button {
+  margin-top: 10px;
+}
 /* fine header */
 
 /* Main */
 #todo-list {
-  margin: 30px auto;
+  display: inline-block;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
   list-style: none;
   text-align: left;
   font-size: 20px;
 }
 
 .task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .task p {
-  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
 }
 
-.task i.fa-edit {
-  margin-left: 20px;
+.task .icons {
+  margin-left: 30px;
+  text-align: right;
+}
+
+.task input.edit,
+.task button.ok {
+  padding: 6px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
 }
 /* fine main */

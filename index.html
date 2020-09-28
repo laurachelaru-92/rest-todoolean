@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Todoolean CRUD life</title>
+    <title>Todoolean</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -14,12 +14,15 @@
     <div id="wrapper">
       <!-- Header con titolo e icona di aggiunta elemento -->
       <header>
-        <h1>Todoolean CRUD</h1>
-        <i class="fas fa-plus-circle add"></i>
-        <div>
-          <input type="text" placeholder="Inserisci una nuova task">
-          <button id="send">Invia</button>
-        </div>
+        <h1>Your personal Todoolean List</h1>
+        <span id="plus">
+          <i class="fas fa-plus-circle add"></i>
+          <span class="balloon-add">Add new</span>
+          <span class="input-container d-none">
+            <input type="text" placeholder="Inserisci una nuova task">
+            <button id="send">Invia</button>
+          </span>
+        </span>
       </header>
       <!-- / header -->
       <!-- Main -->
@@ -33,10 +36,12 @@
     <script id="insert-templ" type="text/x-handlebars-template">
       <li class="task" id="{{arrayId}}">
         <p>{{text}}</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt delete"></i>
-        <input type="text" class="edit" placeholder="Scrivi qui...">
-        <button class="ok">Ok</button>
+        <span class="icons">
+          <input type="text" class="edit invisible" placeholder="Modifica task...">
+          <button class="ok invisible">Ok</button>
+          <i class="fas fa-edit"></i>
+          <i class="fas fa-trash-alt delete"></i>
+        </span>
       </li>
     </script>
     <!-- / handlebars template -->

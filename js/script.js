@@ -6,8 +6,9 @@ $("header").on("click", "#send", function(){
   var value = $("header input").val();
   if(value != "") {
     addEl(value);
+    $(".input-container").addClass("d-none");
+    $("header input").val("");
   }
-  $("header input").val("");
 });
 // Evento all'invio
 $("header").keyup("header input", function(e){
@@ -15,8 +16,9 @@ $("header").keyup("header input", function(e){
     var value = $("header input").val();
     if(value != "") {
       addEl(value);
+      $(".input-container").addClass("d-none");
+      $("header input").val("");
     }
-    $("header input").val("");
   }
 });
 
@@ -77,9 +79,11 @@ $("#todo-list").on("keyup", "input.edit", function(e){
   if(e.which == 13) {
     var value = $(this).val();
     if(value != "") {
-      var idListItem = $(this).parent().attr("id");
+      var idListItem = $(this).parents(".task").attr("id");
       updateEl(idListItem, value);
       $(this).val("");
+      $(this).addClass("invisible");
+      $(this).siblings(".ok").addClass("invisible");
     }
   }
 });
@@ -88,9 +92,11 @@ $("#todo-list").on("keyup", "input.edit", function(e){
 $("#todo-list").on("click", ".ok", function(){
   var value = $(this).siblings("input.edit").val();
   if(value != "") {
-    var idListItem = $(this).parent().attr("id");
+    var idListItem = $(this).parents(".task").attr("id");
     updateEl(idListItem, value);
     $(this).siblings("input.edit").val("");
+    $(this).siblings("input.edit").addClass("invisible");
+    $(this).addClass("invisible");
   }
 });
 
@@ -117,7 +123,7 @@ function updateEl(idEl, input) {
 // ******DELETE******
 // Evento al click su un'icona .delete
 $("#todo-list").on("click", ".delete", function(){
-  var idListItem = $(this).parent().attr("id");
+  var idListItem = $(this).parents(".task").attr("id");
   deleteEl(idListItem);
 });
 
@@ -134,6 +140,20 @@ function deleteEl(idEl) {
     }
   });
 }
+
+
+
+// ***Altro***
+// Al click sul "+" appare la barra di input per inserire una nuova task
+$(".add").click(function(){
+  $(".input-container").toggleClass("d-none");
+});
+
+// Al click su ".fa-edit" appare la barra di input per modificare la task
+$("#todo-list").on("click", ".fa-edit", function(){
+  $(this).siblings(".edit, .ok").toggleClass("invisible");
+});
+
 
 
 });
